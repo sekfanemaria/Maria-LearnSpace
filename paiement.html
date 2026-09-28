@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inscription et paiement | Maria LearnSpace</title>
+<link rel="icon" type="image/png" href="C:\Users\YOGA 9I CARBON
+\Desktop\Althue academy formation WEB\front\WebSite1\icons\price.png">
+<meta name="description" content="Formations Word, Excel et PowerPoint. Remise si vous prenez les trois.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <a class="logo" href="index.html">Maria<b>LearnSpace</b></a>
+  <nav id="menu" aria-label="Navigation principale">
+    <a href="formations.html">Formations</a>
+    <a href="paiement.html" aria-current="page">Inscription et paiement</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener">WhatsApp</a>
+  <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+</header>
+<main>
+<section class="page-head"><h1>Inscription et paiement</h1><p>Remplissez le formulaire. Vos informations sont enregistrées automatiquement.</p></section>
+<section class="sec">
+  <div class="split">
+    <form id="form" novalidate>
+      <div class="row">
+        <label>Prénom<input name="prenom" required autocomplete="given-name"></label>
+        <label>Nom<input name="nom" required autocomplete="family-name"></label>
+      </div>
+      <div class="row">
+        <label>Téléphone / WhatsApp<input name="telephone" type="tel" required autocomplete="tel"></label>
+        <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      </div>
+      <fieldset>
+        <legend>Formations choisies</legend>
+        <label class="check"><input type="checkbox" name="course" value="word"> Word</label>
+        <label class="check"><input type="checkbox" name="course" value="excel"> Excel</label>
+        <label class="check"><input type="checkbox" name="course" value="powerpoint"> PowerPoint</label>
+      </fieldset>
+      <label>Moyen de paiement
+        <select name="paiement" required>
+          <option value="">Choisir</option>
+          <option>BaridiMob</option>
+          <option>CCP</option>
+        </select>
+      </label>
+      <button class="btn btn-main" type="submit">Confirmer l'inscription</button>
+      <p id="msg" role="status"></p>
+    </form>
+    <aside class="summary" aria-live="polite">
+      <h3>Récapitulatif</h3>
+      <dl>
+        <div><dt>Sous-total</dt><dd id="sub">0 DA</dd></div>
+        <div><dt>Remise pack</dt><dd id="rem">0 DA</dd></div>
+        <div class="total"><dt>Total à payer</dt><dd id="tot">0 DA</dd></div>
+      </dl>
+      <p class="hint" id="hint">Ajoutez les trois formations pour obtenir la remise.</p>
+    </aside>
+  </div>
+</section>
+</main>
+<footer><p>© <span id="year"></span> OfficeLab. Tous droits réservés.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
+ 

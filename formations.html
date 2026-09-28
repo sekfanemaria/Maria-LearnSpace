@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Formations | Maria LearnSpace</title>
+<link rel="icon" type="image/png" href="C:\Users\YOGA 9I CARBON
+\Desktop\Althue academy formation WEB\front\WebSite1\icons\formation.png">
+<meta name="description" content="Formations Word, Excel et PowerPoint. Remise si vous prenez les trois.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <a class="logo" href="index.html">Maria<b>LearnSpace</b></a>
+  <nav id="menu" aria-label="Navigation principale">
+    <a href="formations.html" aria-current="page">Formations</a>
+    <a href="paiement.html">Inscription et paiement</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener">WhatsApp</a>
+  <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+</header>
+<main>
+<section class="page-head"><h1>Nos formations</h1><p>Trois formations pratiques. Choisissez-en une, deux ou les trois.</p></section>
+<section class="sec">
+  <div class="grid3">
+    <article class="card w">
+      <h3>Word</h3>
+      <p>Mise en page, styles, sommaire automatique, tableaux, rapports et mémoires.</p>
+      <ul><li>Documents professionnels</li><li>Publipostage</li><li>Mémoire et thèse</li></ul>
+      <p class="price"><span data-price="word"></span></p>
+      <a class="btn btn-card" href="paiement.html?course=word">Choisir Word</a>
+    </article>
+    <article class="card x">
+      <h3>Excel</h3>
+      <p>Formules, tableaux croisés dynamiques, graphiques et analyse de données.</p>
+      <ul><li>RECHERCHEV, SI, SOMME.SI</li><li>Tableaux croisés</li><li>Tableaux de bord</li></ul>
+      <p class="price"><span data-price="excel"></span></p>
+      <a class="btn btn-card" href="paiement.html?course=excel">Choisir Excel</a>
+    </article>
+    <article class="card p">
+      <h3>PowerPoint</h3>
+      <p>Conception de présentations claires, animations utiles et prise de parole.</p>
+      <ul><li>Structure d'un exposé</li><li>Design et modèles</li><li>Animations</li></ul>
+      <p class="price"><span data-price="powerpoint"></span></p>
+      <a class="btn btn-card" href="paiement.html?course=powerpoint">Choisir PowerPoint</a>
+    </article>
+  </div>
+  <p class="pack"><strong>Pack complet : -<span data-discount></span> de remise</strong> si vous prenez Word, Excel et PowerPoint ensemble.</p>
+</section>
+</main>
+<footer><p>© <span id="year"></span> OfficeLab. Tous droits réservés.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
+ 
