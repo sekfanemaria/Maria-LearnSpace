@@ -2,7 +2,7 @@
 const CONFIG = {
   whatsapp: "213798443828",          // votre numéro, format international sans + ni espaces
   email: "sekfanemaria2004@email.com",
-  sheetUrl: "COLLER_ICI_L_URL_APPS_SCRIPT", // voir apps-script.gs
+  sheetUrl: "https://script.google.com/macros/s/AKfycbyr2ww3CrHaXONKSzCgvP-oRLdo2v0oXGimJgSCvxiahadwv1RBvSuAgkWijgh31JeQ/exec", // voir apps-script.gs
   discount: 0.20,                    // 20 % si les 3 formations
   courses: {
     word:       { name: "Word",       price: 6000 },
